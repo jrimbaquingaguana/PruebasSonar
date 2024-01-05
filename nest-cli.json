@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/databasems/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/databasems/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/databasems",
+  "projects": {
+    "databasems": {
+      "type": "application",
+      "root": "apps/databasems",
+      "entryFile": "main",
+      "sourceRoot": "apps/databasems/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/databasems/tsconfig.app.json"
+      }
+    },
+    "oauth": {
+      "type": "application",
+      "root": "apps/oauth",
+      "entryFile": "main",
+      "sourceRoot": "apps/oauth/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/oauth/tsconfig.app.json"
+      }
+    },
+    "oauthmobile": {
+      "type": "application",
+      "root": "apps/oauthmobile",
+      "entryFile": "main",
+      "sourceRoot": "apps/oauthmobile/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/oauthmobile/tsconfig.app.json"
+      }
+    },
+    "powerfitregisters": {
+      "type": "application",
+      "root": "apps/powerfitregisters",
+      "entryFile": "main",
+      "sourceRoot": "apps/powerfitregisters/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/powerfitregisters/tsconfig.app.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+INSERT INTO `grupo_ornitologico` (`id_grupo_ornitologico`, `descripcion_patas`, `descripcion_dedos`, `descripcion_picos`) VALUES ('001', 'Fuerte patas', 'Fuertes picos', 'Fuertes dedos');
+INSERT INTO `grupo_ornitologico` (`id_grupo_ornitologico`, `descripcion_patas`, `descripcion_dedos`, `descripcion_picos`) VALUES ('002', 'Medio patas', 'Medios dedos', 'Medio picos');
+INSERT INTO `grupo_ornitologico` (`id_grupo_ornitologico`, `descripcion_patas`, `descripcion_dedos`, `descripcion_picos`) VALUES ('003', 'Debil patas', 'Debil dedos', 'Debil picos');
+INSERT INTO `especie_ave` (`id_especie`, `id_grupo_ornitologico`, `descripcion`, `role`, `nombre_cientifico`, `nombre_vulgar`) VALUES ('1', '1', NULL, NULL, 'harpia', 'águila');
+INSERT INTO `especie_ave` (`id_especie`, `id_grupo_ornitologico`, `descripcion`, `role`, `nombre_cientifico`, `nombre_vulgar`) VALUES ('2', '1', NULL, NULL, 'Morphnus', 'águila monera');
+INSERT INTO `especie_ave` (`id_especie`, `id_grupo_ornitologico`, `descripcion`, `role`, `nombre_cientifico`, `nombre_vulgar`) VALUES ('2', '1', NULL, NULL, 'Morphnus', 'águila monera');
+INSERT INTO `especie_ave` (`id_especie`, `id_grupo_ornitologico`, `descripcion`, `role`, `nombre_cientifico`, `nombre_vulgar`) VALUES ('3', '2', NULL, NULL, 'Milvago', 'Caracara');
+INSERT INTO `especie_ave` (`id_especie`, `id_grupo_ornitologico`, `descripcion`, `role`, `nombre_cientifico`, `nombre_vulgar`) VALUES ('4', '3', NULL, NULL, 'Polusoma', 'Gavilán');
+INSERT INTO `especie_ave` (`id_especie`, `id_grupo_ornitologico`, `descripcion`, `role`, `nombre_cientifico`, `nombre_vulgar`) VALUES ('5', '2', NULL, NULL, 'Ictinia', 'Elanio');
+INSERT INTO `zona_observacion` (`codigo_zona`, `id_zona_observacion`, `nombre_zona_observacion`, `comunidad_autonoma`, `tipo`) VALUES ('1', '1', NULL, 'Quito', NULL);
+INSERT INTO `zona_observacion` (`codigo_zona`, `id_zona_observacion`, `nombre_zona_observacion`, `comunidad_autonoma`, `tipo`) VALUES ('2', '1', NULL, 'Sangolqui', NULL);
+INSERT INTO `zona_observacion` (`codigo_zona`, `id_zona_observacion`, `nombre_zona_observacion`, `comunidad_autonoma`, `tipo`) VALUES ('3', '1', NULL, 'Cuenca', NULL);
+INSERT INTO `asociacion_ornitologica` (`id_asociacion_ornitologica`, `nombre_asociacion_ornitologica`, `calle_principal`, `calle_secundaria`, `ciudad`, `estado`, `telefono`) VALUES ('1', 'ESPE', NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `observador` (`codigo_observador`, `id_observador`, `primer_nombre`, `segundo_nombre`, `primer_apellido`, `segundo_apellido`, `activo`, `calle_principal`, `calle_secundaria`, `ciudad`, `estado`, `registro_federal_contribuyente`) VALUES ('1', '1', 'Joel', NULL, NULL, NULL, NULL, NULL, NULL, 'Calderón', NULL, NULL);
+INSERT INTO `observador` (`codigo_observador`, `id_observador`, `primer_nombre`, `segundo_nombre`, `primer_apellido`, `segundo_apellido`, `activo`, `calle_principal`, `calle_secundaria`, `ciudad`, `estado`, `registro_federal_contribuyente`) VALUES ('1', '2', 'Steven', NULL, NULL, NULL, NULL, NULL, NULL, 'Tumbaco', NULL, NULL);
+INSERT INTO `asociacion_ornitologica` (`id_asociacion_ornitologica`, `nombre_asociacion_ornitologica`) VALUES ('2', 'UCE');
+INSERT INTO `asociacion_ornitologica` (`id_asociacion_ornitologica`, `nombre_asociacion_ornitologica`) VALUES ('3', 'POLI');
+INSERT INTO `observador` (`codigo_observador`, `id_observador`, `primer_nombre`, `activo`, `ciudad`) VALUES ('3', '2', 'Erick', '1', 'Magdalena');
+INSERT INTO `zona_observacion` (`codigo_zona`, `id_zona_observacion`, `comunidad_autonoma`) VALUES ('5', '3', 'Orellana');
+

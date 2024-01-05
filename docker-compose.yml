@@ -1,0 +1,16 @@
+version: '24.0'
+
+services:
+    database:
+      image: postgres:13
+      environment: 
+        - POSTGRES_DB=exersice
+        - POSTGRES_USER=martin
+        - POSTGRES_PASSWORD=powerfit
+      ports:
+        - '5432:5432'
+      volumes:
+        - postgres_data:/var/lib/postgresql 
+volumes:
+  postgres_data:
+    external: true
